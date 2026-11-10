@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HANGOVA CREATIVES – Imagine. Create. Elevate.</title>
+<meta name="description" content="HANGOVA CREATIVES is an international creative, digital marketing and technology agency: branding, content, websites and apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111111;--bg2:#1a1a1f;--fg:#ffffff;--mut:#b9b7c6;--pur:#6C5CE7;--lav:#A29BFE;--gold:#D6BD91;--line:#ffffff1f;--card:#1a1a1f;--onpur:#fff;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111111}}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#F5F5F7;--bg2:#ffffff;--fg:#111111;--mut:#55526b;--line:#1111111f;--card:#ffffff;--gold:#8a6d2f;--lav:#5a49d6;color-scheme:light}}
+:root[data-theme="dark"]{--bg:#111111}
+html{height:100%;scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.65 Manrope,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.08;margin:0 0 .5em;font-weight:600}
+h1{font-size:clamp(2.6rem,8vw,5.6rem)}h2{font-size:clamp(2rem,5vw,3.2rem)}h3{font-size:1.5rem}
+p{margin:0 0 1em;max-width:68ch}a{color:inherit}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+.mut{color:var(--mut)}
+.btn{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:12px 22px;border-radius:2px;text-decoration:none;font:700 .95rem Manrope;background:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--gold);color:#111}
+.btn.fill{background:var(--pur);border-color:var(--pur);color:#fff}.btn.fill:hover{background:var(--lav);border-color:var(--lav);color:#111}
+:focus-visible{outline:2px solid var(--lav);outline-offset:2px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 1.35rem "Cormorant Garamond",serif;letter-spacing:.14em;text-decoration:none}.logo b{color:var(--gold)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-size:.92rem}nav a:hover{color:var(--gold)}
+#burger{display:none;background:none;border:1px solid var(--line);color:var(--fg);padding:8px 12px;border-radius:2px}
+@media(max-width:860px){#burger{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:68px;background:var(--bg);flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--line)}nav ul.open{display:flex}}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;animation:drift 18s ease-in-out infinite alternate}
+.b1{width:420px;height:420px;background:var(--pur);top:-80px;left:-100px}.b2{width:340px;height:340px;background:var(--gold);opacity:.25;bottom:-60px;right:8%;animation-delay:-6s}.b3{width:300px;height:300px;background:var(--lav);top:30%;right:-80px;animation-delay:-11s}
+@keyframes drift{to{transform:translate(60px,40px) scale(1.15)}}
+.hero .wrap{position:relative}
+.hero h1{max-width:12ch;animation:rise 1s both}.hero p{font-size:1.15rem;animation:rise 1s .2s both}.hero .acts{display:flex;flex-wrap:wrap;gap:12px;animation:rise 1s .4s both}
+.tag{color:var(--gold);font-family:"Cormorant Garamond",serif;font-size:1.3rem;font-style:italic;margin-bottom:12px}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
+.alt{background:var(--bg2)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);padding:24px}
+.alt .card{background:var(--bg)}
+.svc{border-top:1px solid var(--line)}
+details.svc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:22px 0;font:600 1.6rem "Cormorant Garamond",serif}
+details.svc summary::-webkit-details-marker{display:none}
+details.svc summary::after{content:"+";color:var(--gold);font-size:1.6rem}details[open].svc summary::after{content:"–"}
+.svc .body{padding:0 0 28px;display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.svc h4{margin:0 0 8px;color:var(--gold);font-size:.95rem}.svc ul{margin:0;padding-left:18px}.svc li{margin-bottom:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{border:1px solid var(--line);background:none;color:var(--fg);padding:8px 14px;border-radius:99px;cursor:pointer;font:500 .88rem Manrope}
+.chip[aria-pressed="true"]{background:var(--pur);border-color:var(--pur);color:#fff}
+.demo{display:inline-block;border:1px solid var(--gold);color:var(--gold);font-size:.75rem;padding:2px 8px;margin-bottom:10px}
+.mock{height:140px;margin:-24px -24px 18px;display:flex;align-items:flex-end;padding:14px;font:600 1.1rem "Cormorant Garamond",serif;color:#fff}
+.price{font:600 2.2rem "Cormorant Garamond",serif;color:var(--gold)}
+form{display:grid;gap:18px}fieldset{border:1px solid var(--line);padding:18px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:0}
+legend{padding:0 8px;color:var(--gold);font-weight:700}
+label{display:grid;gap:6px;font-size:.9rem}
+input,select,textarea{font:inherit;background:var(--bg);color:var(--fg);border:1px solid var(--line);padding:11px;border-radius:2px;width:100%}
+.alt input,.alt select,.alt textarea{background:var(--bg)}
+.checks{display:flex;flex-wrap:wrap;gap:10px;grid-column:1/-1}.checks label{display:flex;align-items:center;gap:8px;border:1px solid var(--line);padding:8px 12px}.checks input{width:auto}
+.full{grid-column:1/-1}.err{color:#ff8a8a;font-size:.85rem;min-height:1em}
+.hp{position:absolute;left:-9999px}
+dialog{background:var(--bg2);color:var(--fg);border:1px solid var(--gold);max-width:min(640px,92vw);padding:28px;max-height:86vh}dialog::backdrop{background:#000a}
+.ok{border:1px solid var(--gold);padding:24px;background:var(--card)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:35;background:#25D366;color:#073b1a;font-weight:700;text-decoration:none;padding:13px 18px;border-radius:99px;box-shadow:0 6px 20px #0006}
+footer{border-top:1px solid var(--line);padding:32px 0 90px;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:640px;font-size:.88rem}td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.admin input,.admin select,.admin textarea{padding:6px}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#home">HANGOVA <b>CREATIVES</b></a>
+<nav aria-label="Main"><ul id="menu">
+<li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#work">Our Work</a></li><li><a href="#packages">Packages</a></li><li><a href="#contact">Contact Us</a></li>
+<li><a class="btn fill" href="#enquiry">Get a Quote</a></li></ul></nav>
+<button id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+</div></header>
+
+<main>
+<section class="hero" id="home">
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap">
+<div class="tag">Imagine. Create. Elevate.</div>
+<h1>WE CREATE. WE INNOVATE. WE ELEVATE.</h1>
+<p>Creative strategies, powerful branding and innovative digital solutions to transform your business.</p>
+<div class="acts"><a class="btn fill" href="#services">Explore Our Services</a><a class="btn" href="#work">View Our Work</a><a class="btn" href="#enquiry">Get a Free Consultation</a></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+<h2>A studio for ideas that need to work</h2>
+<p>HANGOVA CREATIVES is a creative and technology agency providing professional digital marketing, branding, content creation, website development and mobile application development. We help startups, entrepreneurs, small businesses and established companies build strong digital identities and grow their online presence.</p>
+<div class="grid" style="margin-top:32px">
+<div class="card"><h3>Who we are</h3><p class="mut">An international team of designers, marketers and developers working as one studio.</p></div>
+<div class="card"><h3>What we do</h3><p class="mut">Strategy, identity, content, websites, apps and software, from first idea to launch and growth.</p></div>
+<div class="card"><h3>Our mission</h3><p class="mut">To empower businesses through creative excellence, strategic digital marketing and innovative technology solutions.</p></div>
+<div class="card"><h3>Our vision</h3><p class="mut">To become a globally recognised creative and digital solutions agency.</p></div>
+<div class="card"><h3>Our creative approach</h3><p class="mut">Listen, imagine, create, elevate: we start with your audience, then design and build what moves them.</p></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2>Services</h2><p class="mut">Open a service to see what’s included, the benefits and a sample project.</p>
+<div id="svcList"></div>
+</div></section>
+
+<section id="work" class="alt"><div class="wrap">
+<h2>Our Work</h2>
+<p class="mut">Every project below is a fictional demo created to show our approach. They are not completed client work. Real projects will appear here as they’re added.</p>
+<div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+<div class="grid" id="workGrid"></div>
+</div></section>
+
+<section id="packages"><div class="wrap">
+<h2>Packages &amp; Pricing</h2><p class="mut">Prices appear once they’re set by the administrator. Need something different? Request a custom quotation.</p>
+<div class="grid" id="pkgGrid"></div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
+<h2>Contact Us</h2>
+<div class="grid" id="contactGrid"></div>
+</div></section>
+
+<section id="enquiry"><div class="wrap">
+<h2>Tell us about your project</h2><p class="mut">Fields marked * are required. You’ll get a reference number as soon as you submit.</p>
+<div id="formArea"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div>© <span id="yr"></span> HANGOVA CREATIVES. Imagine. Create. Elevate.</div>
+<div><a href="#" data-dlg="privacy">Privacy Policy</a> · <a href="#" data-dlg="terms">Terms &amp; Conditions</a> · <a href="#" id="adminLink">Admin</a></div></div></footer>
+<a class="wa" id="waFloat" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+
+<dialog id="dlg"><div id="dlgBody"></div><p><button class="btn" onclick="dlg.close()">Close</button></p></dialog>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store={get(k,d){try{const v=localStorage.getItem('hc_'+k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem('hc_'+k,JSON.stringify(v))}catch(e){}}};
+const mem={};const G=(k,d)=>k in mem?mem[k]:(mem[k]=store.get(k,d)),S=(k,v)=>{mem[k]=v;store.set(k,v)};
+
+const SERVICES=[
+["Digital Marketing","Growth-focused strategy and campaigns that turn attention into customers.",["Digital marketing strategy","Social media marketing","Facebook and Instagram advertising","Google advertising","Lead generation","Campaign management","Marketing analytics","Business growth strategies"],["Clear plan tied to your goals","More qualified leads","Reports you can understand"],"Demo: 90-day launch plan for a fictional café"],
+["Branding & Brand Identity","A visual identity and voice that makes your business instantly recognisable.",["Logo design","Brand identity development","Brand guidelines","Colour palette selection","Typography","Business cards","Brand strategy"],["Consistent look everywhere","Stronger trust","Easy for your team to apply"],"Demo: identity system for a fictional skincare label"],
+["Graphic Design","Polished creatives for print and screen.",["Social media creatives","Posters and banners","Promotional designs","Brochures","Flyers","Advertising creatives"],["Eye-catching visuals","Fast turnaround","Ready-to-use files"],"Demo: festival poster and banner set"],
+["Social Media Management","We run your accounts so you can run your business.",["Social media account management","Content calendars","Post scheduling","Page optimisation","Audience engagement","Performance reporting"],["Steady posting","Active community","Monthly insights"],"Demo: 30-day content calendar for a fictional gym"],
+["Content Creation","Stories, reels and copy that people stop scrolling for.",["Social media content","Reels and short videos","Promotional content","Captions and copywriting","Creative storytelling","Video editing"],["Fresh content every week","On-brand voice","Higher engagement"],"Demo: reel series for a fictional travel brand"],
+["Website Development","Fast, responsive websites that are easy for you to update.",["Business websites","Portfolio websites","E-commerce websites","Landing pages","WordPress websites","Responsive website design","Website maintenance"],["Looks great on every device","Built for search","Simple content editing"],"Demo: online store for a fictional tea company"],
+["Mobile Application Development","Android and iOS apps designed around how people really use them.",["Android application development","iOS application development","Business applications","E-commerce applications","Service booking applications","UI/UX design","Application maintenance"],["One idea, both platforms","Smooth user experience","Ongoing support"],"Demo: booking app UI for a fictional salon"],
+["Software Development","Custom tools that remove busywork and give you clear numbers.",["Custom software solutions","Business management systems","Dashboard development","Automation solutions","Web-based applications","Database integration"],["Save hours every week","One source of truth","Built to scale"],"Demo: sales dashboard for a fictional agency"],
+["Digital Advertising & Campaign Management","Paid campaigns that are targeted, tested and tracked.",["Paid advertising campaigns","Audience targeting","Campaign optimisation","Advertisement creatives","Conversion tracking","Performance analysis"],["Spend goes further","Know what works","Faster results"],"Demo: lead-gen ad funnel for a fictional course"]];
+const CATS=["Digital Marketing Campaigns","Brand Identity & Logo Designs","Social Media Designs","Website Development","Mobile Application UI Designs","Graphic Design","Video & Content Creation"];
+const TOOLS=[["Meta Ads, Google Ads, Analytics"],["Illustrator, Figma"],["Photoshop, Canva"],["React, Tailwind, Supabase"],["Figma, Flutter"],["Illustrator, InDesign"],["Premiere Pro, After Effects"]];
+const WORK=CATS.flatMap((c,i)=>[0,1].map(j=>({id:i*2+j,cat:c,title:["Bloom Café Launch","Northwind Coffee Ads","Lumière Skincare Identity","Atlas Logistics Logo","Spring Sale Post Series","Fitwise Story Pack","Tea Atelier Store","Studio Nine Portfolio","Glow Salon Booking App","Pocket Budget App","Music Fest Poster","Product Catalogue","Travel Reel Series","Brand Film Teaser"][i*2+j],desc:"A fictional demo showing how we would approach a "+c.toLowerCase().replace(/s$/,"")+" brief.",tools:TOOLS[i][0],hue:(i*48+j*20)%360})));
+const DEF_PKG=[
+{n:"Starter",d:["One service of your choice","Up to 3 deliverables"],t:"7–10 days",r:"2 rounds of revisions",p:""},
+{n:"Business",d:["Up to 3 services","Brand-consistent deliverables"],t:"2–4 weeks",r:"3 rounds of revisions",p:""},
+{n:"Premium",d:["Full-service creative and digital","Priority support"],t:"4–8 weeks",r:"5 rounds of revisions",p:""},
+{n:"Custom",d:["Tailored to your project","Quotation within 2 working days"],t:"Agreed in quote",r:"Agreed in quote",p:""}];
+const DEF_CT={email:"",whatsapp:"",instagram:"",facebook:"",domain:"",area:""};
+
+// Services
+$("#svcList").innerHTML=SERVICES.map((s,i)=>`<details class="svc"><summary>${esc(s[0])}</summary><div class="body">
+<div><h4>Description</h4><p class="mut">${esc(s[1])}</p><a class="btn" href="#enquiry" data-svc="${i}">Enquire Now</a></div>
+<div><h4>What’s included</h4><ul>${s[2].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+<div><h4>Benefits</h4><ul>${s[3].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+<div><h4>Demo project</h4><p class="mut">${esc(s[4])}</p></div></div></details>`).join("");
+
+// Work
+let cat="All";
+function drawWork(){
+$("#chips").innerHTML=["All",...CATS].map(c=>`<button class="chip" aria-pressed="${c===cat}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");
+const list=G("work",WORK).filter(w=>cat==="All"||w.cat===cat);
+$("#workGrid").innerHTML=list.length?list.map(w=>`<article class="card"><div class="mock" style="background:linear-gradient(135deg,hsl(${w.hue} 60% 38%),hsl(${(w.hue+60)%360} 55% 22%))">${esc(w.title)}</div>
+<span class="demo">Fictional demo</span><h3>${esc(w.title)}</h3><p class="mut" style="font-size:.9rem">${esc(w.cat)}</p><p>${esc(w.desc)}</p><p class="mut" style="font-size:.85rem">Tools: ${esc(w.tools)}</p>
+<button class="btn" data-view="${w.id}">View Project</button></article>`).join(""):"<p class='mut'>No projects in this category yet.</p>";}
+document.addEventListener("click",e=>{
+const c=e.target.closest("[data-cat]");if(c){cat=c.dataset.cat;drawWork()}
+const v=e.target.closest("[data-view]");if(v){const w=G("work",WORK).find(x=>x.id==v.dataset.view);if(w)openDlg(`<h3>${esc(w.title)}</h3><span class="demo">Fictional demo project</span><p>${esc(w.desc)}</p><p class="mut">Category: ${esc(w.cat)}<br>Tools: ${esc(w.tools)}</p><p class="mut">This is a sample created by HANGOVA CREATIVES to illustrate our process. It is not completed client work.</p>`)}
+const s=e.target.closest("[data-svc]");if(s){pre.svc=[SERVICES[s.dataset.svc][0]];drawForm()}
+const p=e.target.closest("[data-pkg]");if(p){pre.pkg=p.dataset.pkg;drawForm()}
+const d=e.target.closest("[data-dlg]");if(d){e.preventDefault();openDlg(DOCS[d.dataset.dlg])}
+});
+function openDlg(h){$("#dlgBody").innerHTML=h;dlg.showModal()}
+const DOCS={privacy:`<h3>Privacy Policy</h3><p>We collect only the details you enter in our enquiry form (such as name, contact details and project information) to respond to your enquiry and prepare quotations. We don’t sell your data. You can ask us to view or delete your information at any time using the contact details on this site.</p><p class="mut">Template text: have it reviewed and completed before launch.</p>`,terms:`<h3>Terms &amp; Conditions</h3><p>Enquiries are not contracts. Quotations are valid for the period stated on them. Project scope, payment terms, timelines and revision limits are agreed in writing before work begins. Sample projects on this site are fictional demos.</p><p class="mut">Template text: have it reviewed and completed before launch.</p>`};
+
+// Packages
+function drawPkg(){const P=G("pkg",DEF_PKG);$("#pkgGrid").innerHTML=P.map((k,i)=>`<article class="card"><h3>${esc(k.n)}</h3>
+<div class="price">${k.p?esc(k.p):"Quote on request"}</div><ul><li>${k.d.map(esc).join("</li><li>")}</li></ul>
+<p class="mut" style="font-size:.9rem">Delivery: ${esc(k.t)}<br>Revisions: ${esc(k.r)}</p><a class="btn" href="#enquiry" data-pkg="${esc(k.n)}">Enquire Now</a></article>`).join("")}
+
+// Contact
+function drawContact(){const c=G("ct",DEF_CT),num=c.whatsapp.replace(/\D/g,"");
+const row=(l,v,h)=>`<div class="card"><h3>${l}</h3>${v?`<p><a href="${esc(h)}" target="_blank" rel="noopener">${esc(v)}</a></p>`:`<p class="mut">Not added yet</p>`}</div>`;
+$("#contactGrid").innerHTML=row("Business Email",c.email,"mailto:"+c.email)+row("WhatsApp",c.whatsapp,"https://wa.me/"+num)+row("Instagram",c.instagram,c.instagram)+row("Facebook",c.facebook,c.facebook)+row("Website",c.domain,/^https?:/.test(c.domain)?c.domain:"https://"+c.domain)+(c.area?`<div class="card"><h3>Service area</h3><p>${esc(c.area)}</p></div>`:"");
+const wa=$("#waFloat");wa.href=num?"https://wa.me/"+num:"#contact";if(!num)wa.removeAttribute("target")}
+
+// Form
+const pre={svc:[],pkg:""};
+const OPTS={svc:["Digital Marketing","Branding & Brand Identity","Graphic Design","Social Media Management","Content Creation","Website Development","Mobile App Development","Software Development","Digital Advertising","Other / Custom Requirements"],
+bud:["Below ₹5,000","₹5,000–₹10,000","₹10,000–₹25,000","₹25,000–₹50,000","₹50,000–₹1,00,000","Above ₹1,00,000","Custom Budget"],tl:["Urgent","Within 7 Days","Within 15 Days","Within 30 Days","Flexible"],cm:["WhatsApp","Email","Phone call"]};
+const sel=(n,a,r)=>`<label>${n}${r?" *":""}<select name="${n}" ${r?"required":""}><option value="">Select</option>${a.map(x=>`<option>${esc(x)}</option>`).join("")}</select></label>`;
+const inp=(n,l,t="text",r)=>`<label>${l}${r?" *":""}<input name="${n}" type="${t}" ${r?"required":""}><span class="err" data-e="${n}"></span></label>`;
+function drawForm(){
+$("#formArea").innerHTML=`<form id="f" novalidate>
+<input class="hp" name="website_url" tabindex="-1" autocomplete="off" aria-hidden="true">
+<fieldset><legend>Personal information</legend>${inp("name","Full Name","text",1)}${inp("company","Business / Company Name")}${inp("email","Email Address","email",1)}${inp("phone","WhatsApp / Phone Number","tel",1)}${inp("country","Country","text",1)}${inp("city","City")}</fieldset>
+<fieldset><legend>Service requirements *</legend><div class="checks">${OPTS.svc.map(s=>`<label><input type="checkbox" name="svc" value="${esc(s)}" ${pre.svc.some(p=>s.startsWith(p.split(" ")[0]))&&pre.svc.length?"checked":""}>${esc(s)}</label>`).join("")}</div><span class="err full" data-e="svc"></span></fieldset>
+<fieldset><legend>Project details</legend>${inp("project","Project Name")}<label class="full">Describe Your Requirements *<textarea name="req" rows="4" required></textarea><span class="err" data-e="req"></span></label>${inp("audience","Target Audience")}${inp("style","Preferred Style")}${inp("links","Reference Website / Links")}${inp("features","Required Features")}</fieldset>
+<fieldset><legend>Budget and timeline</legend>${sel("budget",OPTS.bud)}${sel("timeline",OPTS.tl)}${sel("contactMethod",OPTS.cm)}<label>Reference files<input type="file" name="files" multiple accept="image/*,.pdf,.doc,.docx"></label><label class="full">Additional Notes<textarea name="notes" rows="3">${pre.pkg?"Interested in the "+esc(pre.pkg)+" package.":""}</textarea></label></fieldset>
+<label style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" name="consent" style="width:auto;margin-top:6px" required><span>I agree to the <a href="#" data-dlg="privacy">Privacy Policy</a> and consent to HANGOVA CREATIVES contacting me about this enquiry. *<br><span class="err" data-e="consent"></span></span></label>
+<div><button class="btn fill" type="submit">SUBMIT ENQUIRY</button></div></form>`;
+$("#f").addEventListener("submit",submit)}
+function submit(ev){ev.preventDefault();const f=ev.target,d=new FormData(f);let bad=false;
+const set=(k,m)=>{const el=$(`[data-e="${k}"]`,f);if(el)el.textContent=m||"";if(m)bad=true};
+if(d.get("website_url"))return;
+set("name",d.get("name").trim()?"":"Enter your full name.");
+set("email",/^\S+@\S+\.\S+$/.test(d.get("email").trim())?"":"Enter a valid email address.");
+set("phone",/^[+\d][\d\s()-]{6,}$/.test(d.get("phone").trim())?"":"Enter a valid phone number.");
+set("country",d.get("country").trim()?"":"Enter your country.");
+set("svc",d.getAll("svc").length?"":"Choose at least one service.");
+set("req",d.get("req").trim()?"":"Describe what you need.");
+set("consent",d.get("consent")?"":"Please accept to continue.");
+if(bad){const e=$(".err:not(:empty)",f);e&&e.scrollIntoView({block:"center"});return}
+const rec={};for(const k of["name","company","email","phone","country","city","project","req","audience","style","links","features","budget","timeline","contactMethod","notes"])rec[k]=(d.get(k)||"").trim();
+rec.svc=d.getAll("svc");rec.files=[...f.files.files].map(x=>x.name);
+const sig=JSON.stringify([rec.email,rec.req,rec.svc]),L=G("enq",[]),dup=L.find(x=>x.sig===sig);
+const btn=$("button[type=submit]",f);btn.disabled=true;
+const ref=dup?dup.ref:"HC-"+new Date().getFullYear()+"-"+Math.random().toString(36).slice(2,8).toUpperCase();
+if(!dup)S("enq",[{ref,sig,date:new Date().toISOString(),status:"New",notes:"",...rec},...L]);
+const c=G("ct",DEF_CT),num=c.whatsapp.replace(/\D/g,""),msg=encodeURIComponent(`Hello HANGOVA CREATIVES, I just sent an enquiry. Reference: ${ref}`);
+$("#formArea").innerHTML=`<div class="ok" role="status"><h3>Thank you, ${esc(rec.name)}.</h3><p>${dup?"We already have this enquiry. ":"Your enquiry has been received. "}Your reference number is <strong>${ref}</strong>. Keep it for follow-up.</p><p class="mut">We’ll reply by ${esc(rec.contactMethod||"email")}.</p>
+${num?`<a class="btn fill" target="_blank" rel="noopener" href="https://wa.me/${num}?text=${msg}">Follow up on WhatsApp</a>`:`<p class="mut">WhatsApp follow-up will appear once the business number is added.</p>`}
+${c.email?` <a class="btn" href="mailto:${esc(c.email)}?subject=${encodeURIComponent("Enquiry "+ref)}">Email us</a>`:""}</div>`;
+$("#formArea").scrollIntoView({block:"center"})}
+
+// Admin (demo)
+const STAT=["New","Under Review","Contacted","Quotation Sent","In Progress","Completed","Cancelled"];
+$("#adminLink").onclick=e=>{e.preventDefault();const pw=G("pw",null);
+if(!pw){const n=prompt("Set an admin passcode (demo only, stored in this browser):");if(!n)return;S("pw",n)}
+else if(prompt("Admin passcode:")!==pw)return alert("Incorrect passcode.");
+adminView()};
+function adminView(){const L=G("enq",[]),c=G("ct",DEF_CT),P=G("pkg",DEF_PKG);
+openDlg(`<div class="admin"><h3>Admin dashboard</h3><p class="mut">Demo mode: data is saved only in this browser. A live version needs a Supabase backend for secure login, shared storage and email alerts.</p>
+<h3 style="font-size:1.2rem">Enquiries (${L.length})</h3><input id="q" placeholder="Search name, email or reference" style="margin-bottom:10px"><div class="scroll"><table><thead><tr><th>Ref</th><th>Client</th><th>Services</th><th>Status</th><th>Notes</th></tr></thead><tbody id="rows"></tbody></table></div>
+<h3 style="font-size:1.2rem;margin-top:20px">Contact details</h3><div class="grid">${Object.keys(DEF_CT).map(k=>`<label>${k}<input data-ct="${k}" value="${esc(c[k])}"></label>`).join("")}</div>
+<h3 style="font-size:1.2rem;margin-top:20px">Package prices</h3><div class="grid">${P.map((k,i)=>`<label>${esc(k.n)}<input data-pp="${i}" value="${esc(k.p)}" placeholder="e.g. ₹25,000"></label>`).join("")}</div>
+<p><button class="btn" id="save">Save changes</button></p></div>`);
+const draw=()=>{const q=$("#q").value.toLowerCase();$("#rows").innerHTML=G("enq",[]).filter(x=>(x.name+x.email+x.ref).toLowerCase().includes(q)).map(x=>`<tr><td>${x.ref}</td><td>${esc(x.name)}<br><span class="mut">${esc(x.email)} · ${esc(x.phone)}</span></td><td>${x.svc.map(esc).join(", ")}</td><td><select data-st="${x.ref}">${STAT.map(s=>`<option${s===x.status?" selected":""}>${s}</option>`).join("")}</select></td><td><textarea data-nt="${x.ref}" rows="2">${esc(x.notes)}</textarea></td></tr>`).join("")||"<tr><td colspan=5 class='mut'>No enquiries yet.</td></tr>"};
+draw();$("#q").oninput=draw;
+$("#dlgBody").onchange=$("#dlgBody").oninput=e=>{const t=e.target,L=G("enq",[]);const x=L.find(y=>y.ref===(t.dataset.st||t.dataset.nt));if(!x)return;if(t.dataset.st)x.status=t.value;else x.notes=t.value;S("enq",L)};
+$("#save").onclick=()=>{const c2={...G("ct",DEF_CT)};document.querySelectorAll("[data-ct]").forEach(i=>c2[i.dataset.ct]=i.value.trim());S("ct",c2);
+const P2=G("pkg",DEF_PKG).map(x=>({...x}));document.querySelectorAll("[data-pp]").forEach(i=>P2[i.dataset.pp].p=i.value.trim());S("pkg",P2);drawContact();drawPkg();$("#save").textContent="Saved"}}
+
+$("#burger").onclick=()=>{const o=$("#menu").classList.toggle("open");$("#burger").setAttribute("aria-expanded",o)};
+$("#menu").onclick=e=>{if(e.target.tagName==="A")$("#menu").classList.remove("open")};
+$("#yr").textContent=new Date().getFullYear();
+drawWork();drawPkg();drawContact();drawForm();
+</script>
+</body>
+</html>
